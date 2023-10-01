@@ -1,0 +1,9 @@
+szam = input("Adjon meg egy egész számot:");
+iteracio = 0;
+while (True):
+    if int(szam) == 1:
+        break;
+    szam = int(szam)/2 if int(szam)%2==0 else int(szam)+1; # Segítség: "Ternary operators" (google)
+    print(f"A(z) {iteracio+1}. elem: { int(szam) }");
+    iteracio = iteracio + 1;
+print("A feladat végrehajtása " + str(iteracio) + " iterációt igényelt.");
