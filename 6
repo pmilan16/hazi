@@ -1,0 +1,21 @@
+if müvelet in ['+', '-', '*', '/', '**', '%']:
+    szam1 = float(input("Kérlek add meg az 1.számot: "))
+    szam2 = float(input("Kérlek add meg a 2.számot: "))
+
+    if müvelet == "+":
+        eredmény = szam1 + szam2
+    elif müvelet == "-":
+        eredmény = szam1 - szam2
+    elif müvelet == "*":
+        eredmény = szam1 * szam2
+    elif müvelet == "/":
+        eredmény = szam1 / szam2
+    elif müvelet == "**":
+        eredmény = szam1 ** szam2
+    elif müvelet == "%":
+        eredmény = szam1 % szam2
+
+    print("Eredmény:", eredmény)
+    print(szam1, müvelet, szam2)
+else:
+    print("Hibás művelet!")
