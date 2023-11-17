@@ -1,0 +1,21 @@
+   Kérj be számokat a felhasználótól addig, amíg 0-t nem üt le.
+    A bekért adatokat listában tárold.
+    Érd el, hogy a listában a kilépésre használt 0 ne szerepeljen.
+    add össze és írd ki a lista elemeinek összegét
+
+"""
+szamok = []
+
+while (True):
+    valtozo = int(input("Adjon meg egy számot: "))
+    if valtozo == 0:
+        break
+    szamok.append(valtozo)
+
+szamokosszege = sum(szamok)
+
+osszeg = 0
+for jelenlegiElem in szamok:
+    osszeg += jelenlegiElem
+    # vagy:
+    # osszeg = os
